@@ -35,7 +35,7 @@ void loop()
 
 void Right()
 {
-  Serial.println("Indo para frente");
+  Serial.println("Indo para direita");
   digitalWrite(In1, HIGH);
   digitalWrite(In2, LOW);
   digitalWrite(In3, LOW);
@@ -44,27 +44,25 @@ void Right()
 
 void Left()
 {
-  Serial.println("Indo para tras");
+  Serial.println("Indo para esquerda");
   digitalWrite(In1, LOW);
   digitalWrite(In2, HIGH);
   digitalWrite(In3, HIGH);
   digitalWrite(In4, LOW);
-
 }
 
 void Front()
 {
-  Serial.println("Indo para esquerda");
+  Serial.println("Indo para frente");
   digitalWrite(In1, LOW);
   digitalWrite(In2, HIGH);
   digitalWrite(In3, LOW);
   digitalWrite(In4, HIGH);
-
 }
 
 void Back()
 {
-  Serial.println("Indo para direita");
+  Serial.println("Indo para tras");
   digitalWrite(In1, HIGH);
   digitalWrite(In2, LOW);
   digitalWrite(In3, HIGH);
